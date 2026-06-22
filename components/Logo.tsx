@@ -18,20 +18,24 @@ export default function Logo({
   const subColor = variant === "light" ? "text-white/70" : "text-muted";
 
   return (
-    <Link href="/" className="flex items-center gap-3 group" aria-label="Marbella Host My Home">
+    <Link href="/" className="flex items-center gap-2.5 group min-w-0" aria-label="Marbella Host My Home">
       <Image
         src="/logo-mark.svg"
         alt=""
         width={44}
         height={44}
         priority
-        className="h-11 w-11 transition-transform duration-200 group-hover:scale-105"
+        className="h-9 w-9 sm:h-11 sm:w-11 shrink-0 transition-transform duration-200 group-hover:scale-105"
       />
-      <span className="leading-none">
-        <span className={`block font-display text-lg font-bold tracking-tight ${textColor}`}>
+      <span className="leading-tight min-w-0">
+        <span
+          className={`block font-display text-[15px] sm:text-lg font-bold tracking-tight leading-tight ${textColor}`}
+        >
           Marbella Host My Home
         </span>
-        <span className={`block text-[11px] uppercase tracking-[0.2em] ${subColor}`}>
+        <span
+          className={`mt-0.5 hidden sm:block text-[11px] uppercase tracking-[0.2em] ${subColor}`}
+        >
           {d.brand.tagline}
         </span>
       </span>
