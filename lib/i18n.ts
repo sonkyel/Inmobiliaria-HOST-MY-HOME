@@ -85,6 +85,13 @@ const es = {
     ] as ServiceItem[],
   },
   zones: { kicker: "Dónde alojarte", title: "Las mejores zonas de Marbella" },
+  instagram: {
+    kicker: "Síguenos",
+    title: "Lo último en nuestro Instagram",
+    subtitle:
+      "Descubre nuestras villas, novedades y la vida en Marbella. Síguenos para no perderte nada.",
+    follow: "Seguir en Instagram",
+  },
   ctaFinal: {
     title: "¿Listo para tu escapada a Marbella?",
     text: "Cuéntanos qué buscas (zona, fechas y nº de huéspedes) y te enviamos las mejores opciones disponibles por WhatsApp.",
@@ -197,6 +204,13 @@ const en: Dict = {
     ],
   },
   zones: { kicker: "Where to stay", title: "The best areas of Marbella" },
+  instagram: {
+    kicker: "Follow us",
+    title: "Latest on our Instagram",
+    subtitle:
+      "Discover our villas, news and life in Marbella. Follow us so you don't miss a thing.",
+    follow: "Follow on Instagram",
+  },
   ctaFinal: {
     title: "Ready for your Marbella getaway?",
     text: "Tell us what you're looking for (area, dates and number of guests) and we'll send you the best available options on WhatsApp.",
@@ -307,6 +321,13 @@ const nl: Dict = {
     ],
   },
   zones: { kicker: "Waar te verblijven", title: "De beste gebieden van Marbella" },
+  instagram: {
+    kicker: "Volg ons",
+    title: "Het laatste op onze Instagram",
+    subtitle:
+      "Ontdek onze villa's, nieuws en het leven in Marbella. Volg ons en mis niets.",
+    follow: "Volg op Instagram",
+  },
   ctaFinal: {
     title: "Klaar voor je uitje naar Marbella?",
     text: "Vertel ons wat je zoekt (gebied, data en aantal gasten) en we sturen je de beste beschikbare opties via WhatsApp.",
@@ -417,6 +438,13 @@ const fr: Dict = {
     ],
   },
   zones: { kicker: "Où séjourner", title: "Les meilleurs quartiers de Marbella" },
+  instagram: {
+    kicker: "Suivez-nous",
+    title: "Les dernières actus sur notre Instagram",
+    subtitle:
+      "Découvrez nos villas, nos nouveautés et la vie à Marbella. Suivez-nous pour ne rien manquer.",
+    follow: "Suivre sur Instagram",
+  },
   ctaFinal: {
     title: "Prêt pour votre escapade à Marbella ?",
     text: "Dites-nous ce que vous cherchez (quartier, dates et nombre de voyageurs) et nous vous envoyons les meilleures options disponibles sur WhatsApp.",
@@ -527,6 +555,13 @@ const de: Dict = {
     ],
   },
   zones: { kicker: "Wo übernachten", title: "Die besten Gegenden von Marbella" },
+  instagram: {
+    kicker: "Folgen Sie uns",
+    title: "Das Neueste auf unserem Instagram",
+    subtitle:
+      "Entdecken Sie unsere Villen, Neuigkeiten und das Leben in Marbella. Folgen Sie uns, um nichts zu verpassen.",
+    follow: "Auf Instagram folgen",
+  },
   ctaFinal: {
     title: "Bereit für Ihren Marbella-Kurzurlaub?",
     text: "Sagen Sie uns, was Sie suchen (Gebiet, Daten und Gästezahl) und wir senden Ihnen die besten verfügbaren Optionen per WhatsApp.",
@@ -637,6 +672,13 @@ const it: Dict = {
     ],
   },
   zones: { kicker: "Dove alloggiare", title: "Le migliori zone di Marbella" },
+  instagram: {
+    kicker: "Seguici",
+    title: "Le ultime dal nostro Instagram",
+    subtitle:
+      "Scopri le nostre ville, le novità e la vita a Marbella. Seguici per non perderti nulla.",
+    follow: "Segui su Instagram",
+  },
   ctaFinal: {
     title: "Pronto per la tua fuga a Marbella?",
     text: "Dicci cosa cerchi (zona, date e numero di ospiti) e ti invieremo le migliori opzioni disponibili su WhatsApp.",

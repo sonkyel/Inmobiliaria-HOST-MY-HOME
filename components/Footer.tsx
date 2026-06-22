@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { site } from "@/lib/site";
-import { InstagramIcon, WhatsAppIcon, PinIcon } from "./icons";
+import { InstagramIcon, WhatsAppIcon, PinIcon, MailIcon } from "./icons";
 import { whatsappLink } from "@/lib/whatsapp";
 import { useLang } from "./LanguageProvider";
 
@@ -46,6 +46,15 @@ export default function Footer() {
               <li className="flex items-center gap-2.5">
                 <PinIcon className="h-5 w-5 text-brand-light shrink-0" />
                 {site.city}
+              </li>
+              <li>
+                <a
+                  href={`mailto:${site.email}`}
+                  className="flex items-center gap-2.5 hover:text-white transition-colors duration-200 break-all"
+                >
+                  <MailIcon className="h-5 w-5 text-brand-light shrink-0" />
+                  {site.email}
+                </a>
               </li>
               <li>
                 <a

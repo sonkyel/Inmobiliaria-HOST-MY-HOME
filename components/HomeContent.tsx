@@ -3,6 +3,7 @@
 import Hero from "./Hero";
 import PromoBanner from "./PromoBanner";
 import VillaGrid from "./VillaGrid";
+import InstagramSection from "./InstagramSection";
 import WhatsAppButton from "./WhatsAppButton";
 import { villas, zones } from "@/lib/villas";
 import { PoolIcon, UsersIcon, CheckIcon, PinIcon, WhatsAppIcon } from "./icons";
@@ -91,8 +92,11 @@ export default function HomeContent() {
         </div>
       </section>
 
+      {/* Instagram */}
+      <InstagramSection />
+
       {/* CTA final */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 pb-20 sm:pb-24">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 pb-20 sm:pb-24 pt-20 sm:pt-24">
         <div className="rounded-3xl bg-ink text-white px-6 sm:px-12 py-14 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold">{d.ctaFinal.title}</h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">{d.ctaFinal.text}</p>
