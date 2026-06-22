@@ -45,6 +45,10 @@ export const amenityMap: Record<string, AmenityT> = {
   "Spa y sauna": { en: "Spa and sauna", nl: "Spa en sauna", fr: "Spa et sauna", de: "Spa und Sauna", it: "Spa e sauna" },
   "Parking en garaje": { en: "Garage parking", nl: "Parkeren in garage", fr: "Parking en garage", de: "Garagenstellplatz", it: "Parcheggio in garage" },
   "Servicio de mayordomo": { en: "Butler service", nl: "Butlerservice", fr: "Service de majordome", de: "Butler-Service", it: "Servizio maggiordomo" },
+  Cocina: { en: "Kitchen", nl: "Keuken", fr: "Cuisine", de: "Küche", it: "Cucina" },
+  Ascensor: { en: "Elevator", nl: "Lift", fr: "Ascenseur", de: "Aufzug", it: "Ascensore" },
+  "Zona de trabajo": { en: "Workspace", nl: "Werkplek", fr: "Espace de travail", de: "Arbeitsbereich", it: "Zona di lavoro" },
+  Piscina: { en: "Pool", nl: "Zwembad", fr: "Piscine", de: "Pool", it: "Piscina" },
 };
 
 export function translateAmenity(esText: string, locale: Locale): string {
