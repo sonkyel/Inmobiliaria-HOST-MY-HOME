@@ -2,21 +2,33 @@
 
 import Link from "next/link";
 import type { Villa } from "@/lib/villas";
-import { formatPrice } from "@/lib/villas";
 import { translateVillaText, translateAmenity } from "@/lib/i18n-villas";
 import Gallery from "./Gallery";
 import WhatsAppButton from "./WhatsAppButton";
 import {
   BedIcon,
-  BathIcon,
-  AreaIcon,
   UsersIcon,
   PoolIcon,
   PinIcon,
   CheckIcon,
   ChevronLeftIcon,
+  StarIcon,
 } from "./icons";
 import { useLang } from "./LanguageProvider";
+import type { Dict } from "@/lib/i18n";
+
+function typeLabel(d: Dict, type: Villa["type"]): string {
+  switch (type) {
+    case "Apartamento":
+      return d.airbnb.typeApartamento;
+    case "Habitación":
+      return d.airbnb.typeHabitación;
+    case "Ático":
+      return d.airbnb.typeÁtico;
+    case "Casa":
+      return d.airbnb.typeCasa;
+  }
+}
 
 export default function VillaDetail({ villa }: { villa: Villa }) {
   const { d, locale } = useLang();
@@ -25,13 +37,11 @@ export default function VillaDetail({ villa }: { villa: Villa }) {
     short: villa.shortDescription,
     long: villa.description,
   });
-  const badgeLabel = villa.badge ? d.badges[villa.badge] : null;
 
   const specs = [
-    { icon: BedIcon, label: `${villa.bedrooms} ${d.detail.beds}` },
-    { icon: BathIcon, label: `${villa.bathrooms} ${d.detail.baths}` },
-    { icon: UsersIcon, label: `${villa.guests} ${d.detail.guests}` },
-    { icon: AreaIcon, label: `${villa.sizeM2} m²` },
+    { icon: PinIcon, label: typeLabel(d, villa.type) },
+    ...(villa.bedrooms ? [{ icon: BedIcon, label: `${villa.bedrooms} ${d.detail.beds}` }] : []),
+    ...(villa.guests ? [{ icon: UsersIcon, label: `${villa.guests} ${d.detail.guests}` }] : []),
     ...(villa.privatePool ? [{ icon: PoolIcon, label: d.detail.pool }] : []),
   ];
 
@@ -53,9 +63,13 @@ export default function VillaDetail({ villa }: { villa: Villa }) {
           </p>
           <h1 className="mt-1 font-display text-3xl sm:text-4xl font-bold text-ink">{villa.name}</h1>
         </div>
-        {badgeLabel && (
-          <span className="rounded-full bg-brand text-white text-sm font-semibold px-4 py-1.5">
-            {badgeLabel}
+        {villa.rating && (
+          <span className="rounded-full bg-cream border border-line px-4 py-2 text-ink font-semibold flex items-center gap-1.5">
+            <StarIcon className="h-4 w-4 text-amber-400" />
+            {villa.rating.toFixed(2).replace(".", ",")}
+            {villa.reviews ? (
+              <span className="text-muted font-normal">· {villa.reviews} {d.airbnb.reviewsWord}</span>
+            ) : null}
           </span>
         )}
       </div>
@@ -96,15 +110,28 @@ export default function VillaDetail({ villa }: { villa: Villa }) {
 
         <aside className="lg:col-span-1">
           <div className="lg:sticky lg:top-24 rounded-2xl border border-line bg-white p-6 shadow-sm">
-            <p className="leading-tight">
-              <span className="font-display text-3xl font-bold text-ink">
-                €{formatPrice(villa.pricePerNight)}
-              </span>
-              <span className="text-muted"> {d.detail.perNight}</span>
-            </p>
+            {villa.rating && (
+              <p className="flex items-center gap-2 text-ink">
+                <StarIcon className="h-5 w-5 text-amber-400" />
+                <span className="font-display text-2xl font-bold">
+                  {villa.rating.toFixed(2).replace(".", ",")}
+                </span>
+                {villa.reviews ? (
+                  <span className="text-muted">· {villa.reviews} {d.airbnb.reviewsWord}</span>
+                ) : null}
+              </p>
+            )}
             <p className="mt-2 text-sm text-muted">{d.detail.priceNote}</p>
 
-            <div className="mt-5">
+            <div className="mt-5 space-y-3">
+              <a
+                href={villa.airbnbUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand hover:bg-brand-dark text-white px-7 py-4 font-semibold text-lg transition-colors duration-200 cursor-pointer"
+              >
+                {d.airbnb.book}
+              </a>
               <WhatsAppButton
                 message={d.wa.villa(villa.name, villa.zone)}
                 label={d.detail.reserve}

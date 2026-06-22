@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="max-w-2xl reveal">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-sm font-medium ring-1 ring-white/25">
             <StarIcon className="h-4 w-4 text-amber-300" />
-            {d.hero.badge}
+            {d.airbnb.superhost}
           </span>
 
           <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1]">
@@ -46,16 +46,16 @@ export default function Hero() {
 
           <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-4">
             <div>
-              <dt className="font-display text-3xl font-bold">+50</dt>
-              <dd className="text-white/70 text-sm">{d.hero.stat1}</dd>
+              <dt className="font-display text-3xl font-bold">4,83★</dt>
+              <dd className="text-white/70 text-sm">{d.airbnb.statRating}</dd>
             </div>
             <div>
-              <dt className="font-display text-3xl font-bold">4,9★</dt>
-              <dd className="text-white/70 text-sm">{d.hero.stat2}</dd>
+              <dt className="font-display text-3xl font-bold">+1.000</dt>
+              <dd className="text-white/70 text-sm">{d.airbnb.statReviews}</dd>
             </div>
             <div>
-              <dt className="font-display text-3xl font-bold">24/7</dt>
-              <dd className="text-white/70 text-sm">{d.hero.stat3}</dd>
+              <dt className="font-display text-3xl font-bold">10</dt>
+              <dd className="text-white/70 text-sm">{d.airbnb.statYears}</dd>
             </div>
           </dl>
         </div>

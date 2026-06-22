@@ -3,9 +3,10 @@
 import Hero from "./Hero";
 import PromoBanner from "./PromoBanner";
 import VillaGrid from "./VillaGrid";
+import ReviewsSection from "./ReviewsSection";
 import InstagramSection from "./InstagramSection";
 import WhatsAppButton from "./WhatsAppButton";
-import { villas, zones } from "@/lib/villas";
+import { villas, zones, listingTypes } from "@/lib/villas";
 import { PoolIcon, UsersIcon, CheckIcon, PinIcon, WhatsAppIcon } from "./icons";
 import { useLang } from "./LanguageProvider";
 
@@ -32,9 +33,12 @@ export default function HomeContent() {
         </div>
 
         <div className="mt-10">
-          <VillaGrid villas={villas} zones={zones} />
+          <VillaGrid villas={villas} zones={zones} types={listingTypes} />
         </div>
       </section>
+
+      {/* Reseñas reales */}
+      <ReviewsSection />
 
       {/* Servicios */}
       <section id="servicios" className="bg-cream border-y border-line scroll-mt-20">

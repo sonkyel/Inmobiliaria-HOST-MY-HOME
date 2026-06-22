@@ -1,24 +1,21 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Villa } from "@/lib/villas";
+import type { Villa, ListingType } from "@/lib/villas";
 import VillaCard from "./VillaCard";
 import { useLang } from "./LanguageProvider";
+import type { Dict } from "@/lib/i18n";
 
-type PriceRange = "all" | "lt500" | "500to1000" | "1000to2000" | "gt2000";
-
-function matchesPrice(price: number, range: PriceRange): boolean {
-  switch (range) {
-    case "lt500":
-      return price < 500;
-    case "500to1000":
-      return price >= 500 && price < 1000;
-    case "1000to2000":
-      return price >= 1000 && price < 2000;
-    case "gt2000":
-      return price >= 2000;
-    default:
-      return true;
+function typeLabel(d: Dict, type: ListingType): string {
+  switch (type) {
+    case "Apartamento":
+      return d.airbnb.typeApartamento;
+    case "Habitación":
+      return d.airbnb.typeHabitación;
+    case "Ático":
+      return d.airbnb.typeÁtico;
+    case "Casa":
+      return d.airbnb.typeCasa;
   }
 }
 
@@ -28,45 +25,35 @@ const selectClass =
 export default function VillaGrid({
   villas,
   zones,
+  types,
 }: {
   villas: Villa[];
   zones: string[];
+  types: ListingType[];
 }) {
   const { d } = useLang();
   const [zone, setZone] = useState<string>("all");
-  const [guests, setGuests] = useState<string>("all");
-  const [price, setPrice] = useState<PriceRange>("all");
-
-  const priceOptions: { value: PriceRange; label: string }[] = [
-    { value: "all", label: d.filters.priceAny },
-    { value: "lt500", label: d.filters.priceLt },
-    { value: "500to1000", label: d.filters.priceMid1 },
-    { value: "1000to2000", label: d.filters.priceMid2 },
-    { value: "gt2000", label: d.filters.priceGt },
-  ];
+  const [type, setType] = useState<string>("all");
 
   const filtered = useMemo(() => {
     return villas.filter((v) => {
       if (zone !== "all" && v.zone !== zone) return false;
-      if (guests !== "all" && v.guests < Number(guests)) return false;
-      if (!matchesPrice(v.pricePerNight, price)) return false;
+      if (type !== "all" && v.type !== type) return false;
       return true;
     });
-  }, [villas, zone, guests, price]);
+  }, [villas, zone, type]);
 
   const reset = () => {
     setZone("all");
-    setGuests("all");
-    setPrice("all");
+    setType("all");
   };
 
-  const hasFilters = zone !== "all" || guests !== "all" || price !== "all";
+  const hasFilters = zone !== "all" || type !== "all";
 
   return (
     <div>
-      {/* Filtros */}
       <div className="rounded-2xl bg-cream border border-line p-4 sm:p-5 shadow-sm">
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label htmlFor="filter-zone" className="block text-sm font-medium text-ink mb-1.5">
               {d.filters.zone}
@@ -87,38 +74,19 @@ export default function VillaGrid({
           </div>
 
           <div>
-            <label htmlFor="filter-guests" className="block text-sm font-medium text-ink mb-1.5">
-              {d.filters.guests}
+            <label htmlFor="filter-type" className="block text-sm font-medium text-ink mb-1.5">
+              {d.airbnb.filterType}
             </label>
             <select
-              id="filter-guests"
-              value={guests}
-              onChange={(e) => setGuests(e.target.value)}
+              id="filter-type"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
               className={selectClass}
             >
-              <option value="all">{d.filters.anyGuests}</option>
-              {[2, 4, 6, 8, 10].map((n) => (
-                <option key={n} value={n}>
-                  {n}
-                  {d.filters.guestsSuffix}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="filter-price" className="block text-sm font-medium text-ink mb-1.5">
-              {d.filters.price}
-            </label>
-            <select
-              id="filter-price"
-              value={price}
-              onChange={(e) => setPrice(e.target.value as PriceRange)}
-              className={selectClass}
-            >
-              {priceOptions.map((o) => (
-                <option key={o.value} value={o.value}>
-                  {o.label}
+              <option value="all">{d.airbnb.allTypes}</option>
+              {types.map((t) => (
+                <option key={t} value={t}>
+                  {typeLabel(d, t)}
                 </option>
               ))}
             </select>
@@ -126,7 +94,6 @@ export default function VillaGrid({
         </div>
       </div>
 
-      {/* Resultados */}
       <div className="mt-6 flex items-center justify-between">
         <p className="text-sm text-muted" aria-live="polite">
           {filtered.length}{" "}
