@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Marbella Host My Home">
+  <defs>
+    <linearGradient id="mhmRedMark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d6202b"/>
+      <stop offset="0.55" stop-color="#b3162a"/>
+      <stop offset="1" stop-color="#8e1320"/>
+    </linearGradient>
+  </defs>
+  <g transform="rotate(45 60 60)">
+    <rect x="18" y="18" width="84" height="84" rx="14" fill="url(#mhmRedMark)"/>
+    <rect x="27" y="27" width="66" height="66" rx="10" fill="none" stroke="#f7efe6" stroke-width="2.5" opacity="0.95"/>
+  </g>
+  <g transform="translate(60 52)" fill="none" stroke="#f7efe6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-22 2 L0 -16 L22 2"/>
+    <path d="M-18 2 L-18 20 L18 20 L18 2"/>
+  </g>
+  <g transform="translate(60 52)" fill="#f7efe6">
+    <path d="M0 3 C-6 3 -10 8 -10 13 C-10 20 0 28 0 28 C0 28 10 20 10 13 C10 8 6 3 0 3 Z"/>
+    <circle cx="0" cy="12.5" r="3.4" fill="#b3162a"/>
+  </g>
+</svg>
