@@ -20,6 +20,7 @@ const es = {
     zones: "Zonas",
     services: "Servicios",
     contact: "Contacto",
+    owners: "Propietarios",
   },
   brand: { tagline: "Alquiler vacacional de lujo" },
   promo: {
@@ -151,13 +152,51 @@ const es = {
     reviewsTitle: "Lo que dicen los huéspedes",
     reviewsSubtitle: "Más de 1.000 evaluaciones con una media de 4,83 sobre 5 en Airbnb.",
   },
+  owners: {
+    kicker: "¿Tienes una vivienda?",
+    title: "Gestionamos tu vivienda en Airbnb",
+    subtitle:
+      "Despreocúpate y rentabiliza tu casa o apartamento. Nos encargamos de todo: anuncio, precios, huéspedes, limpieza y mantenimiento.",
+    benefits: [
+      { title: "Maximiza tus ingresos", text: "Precios dinámicos y optimización del anuncio para llenar más noches al mejor precio." },
+      { title: "Gestión integral 360º", text: "Limpieza, check-in, mantenimiento y atención al huésped 24/7. Tú no te ocupas de nada." },
+      { title: "Anuncio profesional", text: "Fotografía y textos que venden. Somos Superhost con más de 1.000 reseñas." },
+      { title: "Transparencia total", text: "Informes claros y comunicación directa. Tu vivienda, en las mejores manos." },
+    ],
+    homeTitle: "¿Eres propietario? Gestionamos tu Airbnb",
+    homeText:
+      "Convierte tu vivienda en Marbella en una fuente de ingresos sin complicaciones. Te lo gestionamos todo.",
+    homeButton: "Quiero gestionar mi vivienda",
+    trust: "Superanfitrión · 4,83★ · +1.000 reseñas · 10 años de experiencia",
+    formTitle: "Cuéntanos sobre tu vivienda",
+    waIntro:
+      "Hola Marbella Host My Home, soy propietario/a y me gustaría que gestionarais mi vivienda en Airbnb.",
+    form: {
+      name: "Nombre",
+      namePh: "Tu nombre",
+      phone: "Teléfono",
+      phonePh: "Tu teléfono",
+      zone: "Zona / ubicación",
+      zonePh: "Ej. Puerto Banús, San Pedro…",
+      message: "Mensaje",
+      messagePh: "Cuéntanos más sobre tu vivienda (opcional)",
+      type: "Tipo de vivienda",
+      typeApartamento: "Apartamento",
+      typeCasa: "Casa / villa",
+      typeAtico: "Ático",
+      typeHabitacion: "Habitación",
+      typeOtro: "Otro",
+      submit: "Enviar por WhatsApp",
+      requiredNote: "Te responderemos lo antes posible por WhatsApp.",
+    },
+  },
   langLabel: "Idioma",
 };
 
 export type Dict = typeof es;
 
 const en: Dict = {
-  nav: { accommodations: "Stays", zones: "Areas", services: "Services", contact: "Contact" },
+  nav: { accommodations: "Stays", zones: "Areas", services: "Services", contact: "Contact", owners: "Owners" },
   brand: { tagline: "Luxury holiday rentals" },
   promo: {
     lead: "Early summer booking —",
@@ -288,11 +327,49 @@ const en: Dict = {
     reviewsTitle: "What guests say",
     reviewsSubtitle: "Over 1,000 reviews with a 4.83 out of 5 average on Airbnb.",
   },
+  owners: {
+    kicker: "Do you own a property?",
+    title: "We manage your home on Airbnb",
+    subtitle:
+      "Relax and make your house or apartment profitable. We handle everything: listing, pricing, guests, cleaning and maintenance.",
+    benefits: [
+      { title: "Maximise your income", text: "Dynamic pricing and listing optimisation to fill more nights at the best rate." },
+      { title: "Full 360º management", text: "Cleaning, check-in, maintenance and 24/7 guest support. You don't lift a finger." },
+      { title: "Professional listing", text: "Photography and copy that sell. We're a Superhost with over 1,000 reviews." },
+      { title: "Total transparency", text: "Clear reports and direct communication. Your home, in the best hands." },
+    ],
+    homeTitle: "Are you a property owner? We manage your Airbnb",
+    homeText:
+      "Turn your Marbella property into a hassle-free source of income. We manage it all for you.",
+    homeButton: "I want to list my property",
+    trust: "Superhost · 4.83★ · 1,000+ reviews · 10 years of experience",
+    formTitle: "Tell us about your property",
+    waIntro:
+      "Hello Marbella Host My Home, I'm a property owner and I'd like you to manage my home on Airbnb.",
+    form: {
+      name: "Name",
+      namePh: "Your name",
+      phone: "Phone",
+      phonePh: "Your phone",
+      zone: "Area / location",
+      zonePh: "E.g. Puerto Banús, San Pedro…",
+      message: "Message",
+      messagePh: "Tell us more about your property (optional)",
+      type: "Property type",
+      typeApartamento: "Apartment",
+      typeCasa: "House / villa",
+      typeAtico: "Penthouse",
+      typeHabitacion: "Room",
+      typeOtro: "Other",
+      submit: "Send via WhatsApp",
+      requiredNote: "We'll get back to you as soon as possible on WhatsApp.",
+    },
+  },
   langLabel: "Language",
 };
 
 const nl: Dict = {
-  nav: { accommodations: "Verblijven", zones: "Gebieden", services: "Diensten", contact: "Contact" },
+  nav: { accommodations: "Verblijven", zones: "Gebieden", services: "Diensten", contact: "Contact", owners: "Eigenaren" },
   brand: { tagline: "Luxe vakantieverhuur" },
   promo: {
     lead: "Vroegboeken zomer —",
@@ -423,11 +500,49 @@ const nl: Dict = {
     reviewsTitle: "Wat gasten zeggen",
     reviewsSubtitle: "Meer dan 1.000 beoordelingen met een gemiddelde van 4,83 op 5 op Airbnb.",
   },
+  owners: {
+    kicker: "Heb je een woning?",
+    title: "Wij beheren jouw woning op Airbnb",
+    subtitle:
+      "Ontzorgd en rendabel: maak je huis of appartement winstgevend. Wij regelen alles: advertentie, prijzen, gasten, schoonmaak en onderhoud.",
+    benefits: [
+      { title: "Maximaliseer je inkomsten", text: "Dynamische prijzen en advertentie-optimalisatie om meer nachten tegen de beste prijs te vullen." },
+      { title: "Volledig 360º-beheer", text: "Schoonmaak, check-in, onderhoud en 24/7 gastenservice. Jij hoeft niets te doen." },
+      { title: "Professionele advertentie", text: "Fotografie en teksten die verkopen. Wij zijn Superhost met meer dan 1.000 beoordelingen." },
+      { title: "Volledige transparantie", text: "Heldere rapporten en directe communicatie. Jouw woning in de beste handen." },
+    ],
+    homeTitle: "Ben je eigenaar? Wij beheren jouw Airbnb",
+    homeText:
+      "Maak van je woning in Marbella een zorgeloze bron van inkomsten. Wij beheren alles voor je.",
+    homeButton: "Ik wil mijn woning aanbieden",
+    trust: "Superhost · 4,83★ · 1.000+ beoordelingen · 10 jaar ervaring",
+    formTitle: "Vertel ons over je woning",
+    waIntro:
+      "Hallo Marbella Host My Home, ik ben woningeigenaar en ik wil graag dat jullie mijn woning op Airbnb beheren.",
+    form: {
+      name: "Naam",
+      namePh: "Je naam",
+      phone: "Telefoon",
+      phonePh: "Je telefoonnummer",
+      zone: "Gebied / locatie",
+      zonePh: "Bijv. Puerto Banús, San Pedro…",
+      message: "Bericht",
+      messagePh: "Vertel ons meer over je woning (optioneel)",
+      type: "Type woning",
+      typeApartamento: "Appartement",
+      typeCasa: "Huis / villa",
+      typeAtico: "Penthouse",
+      typeHabitacion: "Kamer",
+      typeOtro: "Anders",
+      submit: "Versturen via WhatsApp",
+      requiredNote: "We nemen zo snel mogelijk contact met je op via WhatsApp.",
+    },
+  },
   langLabel: "Taal",
 };
 
 const fr: Dict = {
-  nav: { accommodations: "Logements", zones: "Quartiers", services: "Services", contact: "Contact" },
+  nav: { accommodations: "Logements", zones: "Quartiers", services: "Services", contact: "Contact", owners: "Propriétaires" },
   brand: { tagline: "Locations de vacances de luxe" },
   promo: {
     lead: "Réservation anticipée été —",
@@ -558,11 +673,49 @@ const fr: Dict = {
     reviewsTitle: "Ce que disent les voyageurs",
     reviewsSubtitle: "Plus de 1 000 avis avec une moyenne de 4,83 sur 5 sur Airbnb.",
   },
+  owners: {
+    kicker: "Vous avez un logement ?",
+    title: "Nous gérons votre logement sur Airbnb",
+    subtitle:
+      "Détendez-vous et rentabilisez votre maison ou appartement. Nous nous occupons de tout : annonce, prix, voyageurs, ménage et entretien.",
+    benefits: [
+      { title: "Maximisez vos revenus", text: "Prix dynamiques et optimisation de l'annonce pour remplir plus de nuits au meilleur tarif." },
+      { title: "Gestion 360º complète", text: "Ménage, check-in, entretien et assistance voyageurs 24/7. Vous ne vous occupez de rien." },
+      { title: "Annonce professionnelle", text: "Photographie et textes qui vendent. Nous sommes Superhôte avec plus de 1 000 avis." },
+      { title: "Transparence totale", text: "Rapports clairs et communication directe. Votre logement entre de bonnes mains." },
+    ],
+    homeTitle: "Vous êtes propriétaire ? Nous gérons votre Airbnb",
+    homeText:
+      "Transformez votre logement à Marbella en une source de revenus sans souci. Nous gérons tout pour vous.",
+    homeButton: "Je veux confier mon logement",
+    trust: "Superhôte · 4,83★ · 1 000+ avis · 10 ans d'expérience",
+    formTitle: "Parlez-nous de votre logement",
+    waIntro:
+      "Bonjour Marbella Host My Home, je suis propriétaire et j'aimerais que vous gériez mon logement sur Airbnb.",
+    form: {
+      name: "Nom",
+      namePh: "Votre nom",
+      phone: "Téléphone",
+      phonePh: "Votre téléphone",
+      zone: "Quartier / emplacement",
+      zonePh: "Ex. Puerto Banús, San Pedro…",
+      message: "Message",
+      messagePh: "Parlez-nous de votre logement (facultatif)",
+      type: "Type de logement",
+      typeApartamento: "Appartement",
+      typeCasa: "Maison / villa",
+      typeAtico: "Penthouse",
+      typeHabitacion: "Chambre",
+      typeOtro: "Autre",
+      submit: "Envoyer via WhatsApp",
+      requiredNote: "Nous vous répondrons dès que possible sur WhatsApp.",
+    },
+  },
   langLabel: "Langue",
 };
 
 const de: Dict = {
-  nav: { accommodations: "Unterkünfte", zones: "Gebiete", services: "Leistungen", contact: "Kontakt" },
+  nav: { accommodations: "Unterkünfte", zones: "Gebiete", services: "Leistungen", contact: "Kontakt", owners: "Eigentümer" },
   brand: { tagline: "Luxus-Ferienvermietung" },
   promo: {
     lead: "Frühbucher Sommer —",
@@ -693,11 +846,49 @@ const de: Dict = {
     reviewsTitle: "Was Gäste sagen",
     reviewsSubtitle: "Über 1.000 Bewertungen mit einem Durchschnitt von 4,83 von 5 auf Airbnb.",
   },
+  owners: {
+    kicker: "Haben Sie eine Immobilie?",
+    title: "Wir verwalten Ihre Immobilie auf Airbnb",
+    subtitle:
+      "Entspannen Sie sich und machen Sie Ihr Haus oder Apartment rentabel. Wir kümmern uns um alles: Inserat, Preise, Gäste, Reinigung und Wartung.",
+    benefits: [
+      { title: "Maximieren Sie Ihre Einnahmen", text: "Dynamische Preise und Inserat-Optimierung, um mehr Nächte zum besten Preis zu füllen." },
+      { title: "Komplette 360º-Verwaltung", text: "Reinigung, Check-in, Wartung und 24/7-Gästebetreuung. Sie müssen sich um nichts kümmern." },
+      { title: "Professionelles Inserat", text: "Fotografie und Texte, die verkaufen. Wir sind Superhost mit über 1.000 Bewertungen." },
+      { title: "Volle Transparenz", text: "Klare Berichte und direkte Kommunikation. Ihre Immobilie in besten Händen." },
+    ],
+    homeTitle: "Sind Sie Eigentümer? Wir verwalten Ihr Airbnb",
+    homeText:
+      "Machen Sie Ihre Immobilie in Marbella zu einer sorgenfreien Einnahmequelle. Wir verwalten alles für Sie.",
+    homeButton: "Ich möchte meine Immobilie anbieten",
+    trust: "Superhost · 4,83★ · 1.000+ Bewertungen · 10 Jahre Erfahrung",
+    formTitle: "Erzählen Sie uns von Ihrer Immobilie",
+    waIntro:
+      "Hallo Marbella Host My Home, ich bin Eigentümer/in und möchte, dass Sie meine Immobilie auf Airbnb verwalten.",
+    form: {
+      name: "Name",
+      namePh: "Ihr Name",
+      phone: "Telefon",
+      phonePh: "Ihre Telefonnummer",
+      zone: "Gebiet / Lage",
+      zonePh: "z. B. Puerto Banús, San Pedro…",
+      message: "Nachricht",
+      messagePh: "Erzählen Sie uns mehr über Ihre Immobilie (optional)",
+      type: "Art der Immobilie",
+      typeApartamento: "Apartment",
+      typeCasa: "Haus / Villa",
+      typeAtico: "Penthouse",
+      typeHabitacion: "Zimmer",
+      typeOtro: "Sonstiges",
+      submit: "Per WhatsApp senden",
+      requiredNote: "Wir melden uns so schnell wie möglich per WhatsApp.",
+    },
+  },
   langLabel: "Sprache",
 };
 
 const it: Dict = {
-  nav: { accommodations: "Alloggi", zones: "Zone", services: "Servizi", contact: "Contatto" },
+  nav: { accommodations: "Alloggi", zones: "Zone", services: "Servizi", contact: "Contatto", owners: "Proprietari" },
   brand: { tagline: "Affitti vacanze di lusso" },
   promo: {
     lead: "Prenota prima estate —",
@@ -827,6 +1018,44 @@ const it: Dict = {
     reviewsKicker: "Recensioni reali",
     reviewsTitle: "Cosa dicono gli ospiti",
     reviewsSubtitle: "Oltre 1.000 recensioni con una media di 4,83 su 5 su Airbnb.",
+  },
+  owners: {
+    kicker: "Hai un immobile?",
+    title: "Gestiamo il tuo immobile su Airbnb",
+    subtitle:
+      "Rilassati e rendi redditizia la tua casa o appartamento. Pensiamo a tutto noi: annuncio, prezzi, ospiti, pulizie e manutenzione.",
+    benefits: [
+      { title: "Massimizza i tuoi guadagni", text: "Prezzi dinamici e ottimizzazione dell'annuncio per riempire più notti al miglior prezzo." },
+      { title: "Gestione completa 360º", text: "Pulizie, check-in, manutenzione e assistenza ospiti 24/7. Tu non devi fare nulla." },
+      { title: "Annuncio professionale", text: "Foto e testi che vendono. Siamo Superhost con oltre 1.000 recensioni." },
+      { title: "Massima trasparenza", text: "Report chiari e comunicazione diretta. Il tuo immobile in ottime mani." },
+    ],
+    homeTitle: "Sei un proprietario? Gestiamo il tuo Airbnb",
+    homeText:
+      "Trasforma il tuo immobile a Marbella in una fonte di reddito senza pensieri. Gestiamo tutto noi per te.",
+    homeButton: "Voglio affidare il mio immobile",
+    trust: "Superhost · 4,83★ · 1.000+ recensioni · 10 anni di esperienza",
+    formTitle: "Parlaci del tuo immobile",
+    waIntro:
+      "Ciao Marbella Host My Home, sono un proprietario e vorrei che gestiste il mio immobile su Airbnb.",
+    form: {
+      name: "Nome",
+      namePh: "Il tuo nome",
+      phone: "Telefono",
+      phonePh: "Il tuo telefono",
+      zone: "Zona / posizione",
+      zonePh: "Es. Puerto Banús, San Pedro…",
+      message: "Messaggio",
+      messagePh: "Raccontaci di più sul tuo immobile (facoltativo)",
+      type: "Tipo di immobile",
+      typeApartamento: "Appartamento",
+      typeCasa: "Casa / villa",
+      typeAtico: "Attico",
+      typeHabitacion: "Camera",
+      typeOtro: "Altro",
+      submit: "Invia su WhatsApp",
+      requiredNote: "Ti risponderemo il prima possibile su WhatsApp.",
+    },
   },
   langLabel: "Lingua",
 };

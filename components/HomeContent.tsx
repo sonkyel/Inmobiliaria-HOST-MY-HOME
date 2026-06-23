@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import PromoBanner from "./PromoBanner";
 import VillaGrid from "./VillaGrid";
 import ReviewsSection from "./ReviewsSection";
+import OwnersSection from "./OwnersSection";
 import InstagramSection from "./InstagramSection";
 import WhatsAppButton from "./WhatsAppButton";
 import { villas, zones, listingTypes } from "@/lib/villas";
@@ -95,6 +96,9 @@ export default function HomeContent() {
           ))}
         </div>
       </section>
+
+      {/* Propietarios (captación de anfitriones) */}
+      <OwnersSection />
 
       {/* Instagram */}
       <InstagramSection />

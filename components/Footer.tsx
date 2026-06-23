@@ -37,6 +37,11 @@ export default function Footer() {
                   {d.nav.services}
                 </Link>
               </li>
+              <li>
+                <Link href="/propietarios" className="hover:text-white transition-colors duration-200">
+                  {d.nav.owners}
+                </Link>
+              </li>
             </ul>
           </div>
 

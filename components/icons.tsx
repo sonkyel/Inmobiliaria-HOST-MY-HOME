@@ -61,6 +61,41 @@ export function PinIcon(props: IconProps) {
   );
 }
 
+export function ChartUpIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 3v18h18M7 14l4-4 3 3 5-6M21 7v4h-4" />
+    </svg>
+  );
+}
+
+export function KeyIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M14 7a4 4 0 1 1-5.4 5.27L4 16.87V20h3l1-1h2v-2h2l1.27-1.27A4 4 0 0 1 14 7Z" />
+      <circle cx="15.5" cy="7.5" r="0.6" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function CameraIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L19 6h0a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z" />
+      <circle cx="12" cy="12.5" r="3.2" />
+    </svg>
+  );
+}
+
+export function ShieldIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" />
+      <path d="M9 12l2 2 4-4" />
+    </svg>
+  );
+}
+
 export function MailIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

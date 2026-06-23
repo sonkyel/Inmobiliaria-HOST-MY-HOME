@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Logo from "./Logo";
+import { ChartUpIcon } from "./icons";
 import WhatsAppButton from "./WhatsAppButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLang } from "./LanguageProvider";
@@ -28,6 +29,13 @@ export default function Navbar() {
           </Link>
           <Link href="/#contacto" className="hover:text-brand transition-colors duration-200">
             {d.nav.contact}
+          </Link>
+          <Link
+            href="/propietarios"
+            className="inline-flex items-center gap-1.5 text-brand font-semibold hover:text-brand-dark transition-colors duration-200"
+          >
+            <ChartUpIcon className="h-4 w-4" />
+            {d.nav.owners}
           </Link>
         </div>
 
