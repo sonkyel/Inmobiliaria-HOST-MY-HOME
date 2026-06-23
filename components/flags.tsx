@@ -88,11 +88,25 @@ function ES({ className = "" }: FlagProps) {
   );
 }
 
+/** Rusia. */
+function RU({ className = "" }: FlagProps) {
+  return (
+    <span className={`${wrap} ${className}`}>
+      <svg viewBox="0 0 9 6" className="h-full w-full">
+        <rect width="9" height="6" fill="#D52B1E" />
+        <rect width="9" height="4" fill="#0039A6" />
+        <rect width="9" height="2" fill="#fff" />
+      </svg>
+    </span>
+  );
+}
+
 export const Flags: Record<Locale, (props: FlagProps) => React.JSX.Element> = {
   en: GB,
   nl: NL,
   fr: FR,
   de: DE,
   it: IT,
+  ru: RU,
   es: ES,
 };
