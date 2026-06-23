@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import OwnersContent from "@/components/OwnersContent";
 
 export const metadata: Metadata = {
-  title: "Propietarios — Gestionamos tu vivienda en Airbnb",
+  title: "Confía tu vivienda — Gestionamos tu Airbnb en Marbella",
   description:
-    "¿Tienes una casa o apartamento en Marbella? Lo gestionamos en Airbnb: anuncio, precios, huéspedes, limpieza y mantenimiento. Superhost con +1.000 reseñas.",
+    "¿Tienes una casa o apartamento en Marbella? Confía tu vivienda y la gestionamos en Airbnb: anuncio, precios, huéspedes, limpieza y mantenimiento. Superhost con +1.000 reseñas.",
   openGraph: {
-    title: "Propietarios — Marbella Host My Home",
+    title: "Confía tu vivienda — Marbella Host My Home",
     description:
-      "Gestionamos tu vivienda en Airbnb en Marbella. Maximiza tus ingresos sin complicaciones.",
+      "Confía tu vivienda en Marbella y la gestionamos en Airbnb. Maximiza tus ingresos sin complicaciones.",
   },
 };
 

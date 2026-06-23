@@ -20,7 +20,7 @@ const es = {
     zones: "Zonas",
     services: "Servicios",
     contact: "Contacto",
-    owners: "Propietarios",
+    owners: "Confía tu vivienda",
   },
   brand: { tagline: "Alquiler vacacional de lujo" },
   promo: {
@@ -154,7 +154,7 @@ const es = {
   },
   owners: {
     kicker: "¿Tienes una vivienda?",
-    title: "Gestionamos tu vivienda en Airbnb",
+    title: "Confía tu vivienda en Marbella",
     subtitle:
       "Despreocúpate y rentabiliza tu casa o apartamento. Nos encargamos de todo: anuncio, precios, huéspedes, limpieza y mantenimiento.",
     benefits: [
@@ -163,7 +163,7 @@ const es = {
       { title: "Anuncio profesional", text: "Fotografía y textos que venden. Somos Superhost con más de 1.000 reseñas." },
       { title: "Transparencia total", text: "Informes claros y comunicación directa. Tu vivienda, en las mejores manos." },
     ],
-    homeTitle: "¿Eres propietario? Gestionamos tu Airbnb",
+    homeTitle: "Confía tu vivienda, nosotros la gestionamos",
     homeText:
       "Convierte tu vivienda en Marbella en una fuente de ingresos sin complicaciones. Te lo gestionamos todo.",
     homeButton: "Quiero gestionar mi vivienda",
@@ -196,7 +196,7 @@ const es = {
 export type Dict = typeof es;
 
 const en: Dict = {
-  nav: { accommodations: "Stays", zones: "Areas", services: "Services", contact: "Contact", owners: "Owners" },
+  nav: { accommodations: "Stays", zones: "Areas", services: "Services", contact: "Contact", owners: "Entrust your property" },
   brand: { tagline: "Luxury holiday rentals" },
   promo: {
     lead: "Early summer booking —",
@@ -329,7 +329,7 @@ const en: Dict = {
   },
   owners: {
     kicker: "Do you own a property?",
-    title: "We manage your home on Airbnb",
+    title: "Entrust your property in Marbella",
     subtitle:
       "Relax and make your house or apartment profitable. We handle everything: listing, pricing, guests, cleaning and maintenance.",
     benefits: [
@@ -338,7 +338,7 @@ const en: Dict = {
       { title: "Professional listing", text: "Photography and copy that sell. We're a Superhost with over 1,000 reviews." },
       { title: "Total transparency", text: "Clear reports and direct communication. Your home, in the best hands." },
     ],
-    homeTitle: "Are you a property owner? We manage your Airbnb",
+    homeTitle: "Entrust your property — we manage it for you",
     homeText:
       "Turn your Marbella property into a hassle-free source of income. We manage it all for you.",
     homeButton: "I want to list my property",
@@ -369,7 +369,7 @@ const en: Dict = {
 };
 
 const nl: Dict = {
-  nav: { accommodations: "Verblijven", zones: "Gebieden", services: "Diensten", contact: "Contact", owners: "Eigenaren" },
+  nav: { accommodations: "Verblijven", zones: "Gebieden", services: "Diensten", contact: "Contact", owners: "Vertrouw je woning toe" },
   brand: { tagline: "Luxe vakantieverhuur" },
   promo: {
     lead: "Vroegboeken zomer —",
@@ -502,7 +502,7 @@ const nl: Dict = {
   },
   owners: {
     kicker: "Heb je een woning?",
-    title: "Wij beheren jouw woning op Airbnb",
+    title: "Vertrouw je woning in Marbella toe",
     subtitle:
       "Ontzorgd en rendabel: maak je huis of appartement winstgevend. Wij regelen alles: advertentie, prijzen, gasten, schoonmaak en onderhoud.",
     benefits: [
@@ -511,7 +511,7 @@ const nl: Dict = {
       { title: "Professionele advertentie", text: "Fotografie en teksten die verkopen. Wij zijn Superhost met meer dan 1.000 beoordelingen." },
       { title: "Volledige transparantie", text: "Heldere rapporten en directe communicatie. Jouw woning in de beste handen." },
     ],
-    homeTitle: "Ben je eigenaar? Wij beheren jouw Airbnb",
+    homeTitle: "Vertrouw je woning toe, wij beheren het",
     homeText:
       "Maak van je woning in Marbella een zorgeloze bron van inkomsten. Wij beheren alles voor je.",
     homeButton: "Ik wil mijn woning aanbieden",
@@ -542,7 +542,7 @@ const nl: Dict = {
 };
 
 const fr: Dict = {
-  nav: { accommodations: "Logements", zones: "Quartiers", services: "Services", contact: "Contact", owners: "Propriétaires" },
+  nav: { accommodations: "Logements", zones: "Quartiers", services: "Services", contact: "Contact", owners: "Confiez votre logement" },
   brand: { tagline: "Locations de vacances de luxe" },
   promo: {
     lead: "Réservation anticipée été —",
@@ -675,7 +675,7 @@ const fr: Dict = {
   },
   owners: {
     kicker: "Vous avez un logement ?",
-    title: "Nous gérons votre logement sur Airbnb",
+    title: "Confiez votre logement à Marbella",
     subtitle:
       "Détendez-vous et rentabilisez votre maison ou appartement. Nous nous occupons de tout : annonce, prix, voyageurs, ménage et entretien.",
     benefits: [
@@ -684,7 +684,7 @@ const fr: Dict = {
       { title: "Annonce professionnelle", text: "Photographie et textes qui vendent. Nous sommes Superhôte avec plus de 1 000 avis." },
       { title: "Transparence totale", text: "Rapports clairs et communication directe. Votre logement entre de bonnes mains." },
     ],
-    homeTitle: "Vous êtes propriétaire ? Nous gérons votre Airbnb",
+    homeTitle: "Confiez votre logement, nous le gérons",
     homeText:
       "Transformez votre logement à Marbella en une source de revenus sans souci. Nous gérons tout pour vous.",
     homeButton: "Je veux confier mon logement",
@@ -715,7 +715,7 @@ const fr: Dict = {
 };
 
 const de: Dict = {
-  nav: { accommodations: "Unterkünfte", zones: "Gebiete", services: "Leistungen", contact: "Kontakt", owners: "Eigentümer" },
+  nav: { accommodations: "Unterkünfte", zones: "Gebiete", services: "Leistungen", contact: "Kontakt", owners: "Immobilie anvertrauen" },
   brand: { tagline: "Luxus-Ferienvermietung" },
   promo: {
     lead: "Frühbucher Sommer —",
@@ -848,7 +848,7 @@ const de: Dict = {
   },
   owners: {
     kicker: "Haben Sie eine Immobilie?",
-    title: "Wir verwalten Ihre Immobilie auf Airbnb",
+    title: "Vertrauen Sie uns Ihre Immobilie in Marbella an",
     subtitle:
       "Entspannen Sie sich und machen Sie Ihr Haus oder Apartment rentabel. Wir kümmern uns um alles: Inserat, Preise, Gäste, Reinigung und Wartung.",
     benefits: [
@@ -857,7 +857,7 @@ const de: Dict = {
       { title: "Professionelles Inserat", text: "Fotografie und Texte, die verkaufen. Wir sind Superhost mit über 1.000 Bewertungen." },
       { title: "Volle Transparenz", text: "Klare Berichte und direkte Kommunikation. Ihre Immobilie in besten Händen." },
     ],
-    homeTitle: "Sind Sie Eigentümer? Wir verwalten Ihr Airbnb",
+    homeTitle: "Vertrauen Sie uns Ihre Immobilie an – wir verwalten sie",
     homeText:
       "Machen Sie Ihre Immobilie in Marbella zu einer sorgenfreien Einnahmequelle. Wir verwalten alles für Sie.",
     homeButton: "Ich möchte meine Immobilie anbieten",
@@ -888,7 +888,7 @@ const de: Dict = {
 };
 
 const it: Dict = {
-  nav: { accommodations: "Alloggi", zones: "Zone", services: "Servizi", contact: "Contatto", owners: "Proprietari" },
+  nav: { accommodations: "Alloggi", zones: "Zone", services: "Servizi", contact: "Contatto", owners: "Affida il tuo immobile" },
   brand: { tagline: "Affitti vacanze di lusso" },
   promo: {
     lead: "Prenota prima estate —",
@@ -1021,7 +1021,7 @@ const it: Dict = {
   },
   owners: {
     kicker: "Hai un immobile?",
-    title: "Gestiamo il tuo immobile su Airbnb",
+    title: "Affida il tuo immobile a Marbella",
     subtitle:
       "Rilassati e rendi redditizia la tua casa o appartamento. Pensiamo a tutto noi: annuncio, prezzi, ospiti, pulizie e manutenzione.",
     benefits: [
@@ -1030,7 +1030,7 @@ const it: Dict = {
       { title: "Annuncio professionale", text: "Foto e testi che vendono. Siamo Superhost con oltre 1.000 recensioni." },
       { title: "Massima trasparenza", text: "Report chiari e comunicazione diretta. Il tuo immobile in ottime mani." },
     ],
-    homeTitle: "Sei un proprietario? Gestiamo il tuo Airbnb",
+    homeTitle: "Affida il tuo immobile, lo gestiamo noi",
     homeText:
       "Trasforma il tuo immobile a Marbella in una fonte di reddito senza pensieri. Gestiamo tutto noi per te.",
     homeButton: "Voglio affidare il mio immobile",
